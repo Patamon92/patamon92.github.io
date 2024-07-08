@@ -1,0 +1,302 @@
+/* General Styles */
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #000;
+}
+
+.top-header {
+    background: #000; /* Black background for the top header */
+    color: #fff;
+    padding: 10px 0;
+    font-size: 0.9em;
+}
+
+.top-header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Merriweather', serif;
+}
+
+.call-button {
+    background: #fff;
+    color: #000; /* Adjust text color */
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.center-text {
+    text-align: center;
+    color: #fff;
+    margin: 20px 0;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: flex-end; /* Align social buttons to the right */
+}
+
+.social-button {
+    background: #fff;
+    color: #000; /* Adjust text color */
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    margin-left: 10px;
+}
+
+
+
+h2, h3 {
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+}
+
+.red-line {
+    width: 100px;
+    height: 3px;
+    background-color: #e91e63;
+    margin: 10px auto;
+}
+
+.quote-section {
+    background-image: url('quotebg.png'); /* Replace with your background image path */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.quote-content {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+.quote-content h2 {
+    font-size: 2.5em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.quote-description {
+    font-size: 1.2em;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.form-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.form-header {
+    margin-bottom: 30px;
+}
+
+.form-header h2 {
+    font-size: 2.5em;
+}
+
+.contact-info {
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab-btn {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    border: 1px solid #e91e63;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tab-btn.active {
+    background-color: #e91e63;
+    color: #fff;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="date"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.note {
+    font-size: 0.8em;
+    color: #777;
+}
+
+.submit-btn {
+    background-color: #e91e63;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #c2185b;
+}
+
+.bottom-header {
+    background: #000; /* Black background for the bottom header */
+    color: #fff;
+    padding: 10px 0;
+    font-size: 0.9em;
+    position: relative; /* Ensure it stays at the bottom */
+}
+
+.bottom-header .top-header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Merriweather', serif;
+}
+
+.bottom-header .call-button {
+    background: #fff;
+    color: #000;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.bottom-header .center-text {
+    text-align: center;
+    color: #fff;
+    margin: 20px 0;
+}
+
+.bottom-header .social-buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bottom-header .social-button {
+    background: #fff;
+    color: #000;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    margin-left: 10px;
+}
+
+.center-text-btn {
+    background-color: black;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+font-family: 'Merriweather', serif; 
+}
+
+.center-text-btn:hover {
+    background-color: #e91e63;
+}
+
+/* Adjust center text alignment */
+.top-header .top-header-content,
+.bottom-header .top-header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Merriweather', serif;
+    flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+}
+
+/* Adjust spacing for the button */
+.top-header .center-text,
+.bottom-header .center-text {
+    text-align: center;
+    color: #fff;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.company-logo {
+    position: absolute;
+    top: 50px; /* Adjust as needed */
+    left: 30px; /* Adjust as needed */
+    z-index: 10; /* Ensure it appears in front of background */
+}
+

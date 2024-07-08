@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Your Next Event Unforgettable! Request a Quote Now</title>
+    <link rel="stylesheet" href="quotestyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Merriweather:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="sharp-logo.png">
+</head>
+<body>
+<!-- Banner Section -->
+<div class="top-header">
+    <a href="index.html">
+        <img src="sharp-logo.png" alt="Company Logo" class="company-logo">
+    </a>
+    <div class="top-header-content">        <a href="tel:+2975944808" class="call-button"><i class="fas fa-phone"></i> CALL NOW: 297.594.4808</a>
+        <button class="center-text-btn" onclick="window.location.href = 'index.html';">EXPLORE OUR RANGE OF SERVICES! CLICK TO SEE OUR ENTERTAINMENT OPTIONS AND BE INSPIRED.</button>
+        <div class="social-buttons">
+            <a href="https://www.facebook.com/sharparuba/" target="_blank" class="social-button"><i class="fab fa-facebook-f"></i> Facebook</a>
+            <a href="https://www.instagram.com/sharpproductionsaruba/" target="_blank" class="social-button"><i class="fab fa-instagram"></i> Instagram</a>
+        </div>
+    </div>
+</div>
+
+    <!-- Quote Section -->
+    <section class="quote-section">
+        <div class="quote-content">
+            <h2>ARUBA BASED. SERVING CLIENTS FROM WORLDWIDE</h2>
+            <div class="red-line"></div>
+            <p class="quote-description">From beach weddings to ballroom galas, our entertainment services are crafted to elevate your event with elegance and exclusivity. Inquire today to explore how we can enhance your special day with unparalleled sophistication.</p>
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section class="form-section">
+        <div class="form-header">
+            <h2>QUESTIONNAIRE</h2>
+            <p class="contact-info">Need assistance? Directly reach us at <strong>bookings@sharp-productions.com</strong> or <strong>297.594.4808</strong></p>
+        </div>
+        <div class="form-container">
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="wedding">WEDDING EVENT</button>
+                <button class="tab-btn" data-tab="private">PRIVATE EVENT</button>
+                <button class="tab-btn" data-tab="rental">EQUIPMENT RENTAL</button>
+            </div>
+            <form id="quote-form" action="submit.php" method="post">
+                <div id="wedding" class="tab-content active">
+                    <div class="form-group">
+                        <label for="first-name">First Name *</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name *</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                        <span class="note">* Required field in case of email issue.</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="event-date">Event Date *</label>
+                        <input type="date" id="event-date" name="event-date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="venue">Venue Name</label>
+                        <input type="text" id="venue" name="venue">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5"></textarea>
+                    </div>
+                </div>
+                <div id="private" class="tab-content">
+                    <div class="form-group">
+                        <label for="first-name">First Name *</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name *</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                        <span class="note">* Required field in case of email issue.</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="event-date">Event Date *</label>
+                        <input type="date" id="event-date" name="event-date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="venue">Venue Name</label>
+                        <input type="text" id="venue" name="venue">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5"></textarea>
+                    </div>
+                </div>
+                <div id="rental" class="tab-content">
+                    <div class="form-group">
+                        <label for="first-name">First Name *</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name *</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                        <span class="note">* Required field in case of email issue.</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="event-date">Event Date *</label>
+                        <input type="date" id="event-date" name="event-date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="venue">Venue Name</label>
+                        <input type="text" id="venue" name="venue">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5"></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </section>
+<!-- Bottom Banner Section -->
+<div class="bottom-header">
+    <div class="top-header-content">
+        <a href="tel:+2975944808" class="call-button"><i class="fas fa-phone"></i> CALL NOW: 297.594.4808</a>
+        <button class="center-text-btn" onclick="window.location.href = 'index.html';">EXPLORE OUR RANGE OF SERVICES! CLICK TO SEE OUR ENTERTAINMENT OPTIONS AND BE INSPIRED.</button>
+        <div class="social-buttons">
+            <a href="https://www.facebook.com/sharparuba/" target="_blank" class="social-button"><i class="fab fa-facebook-f"></i> Facebook</a>
+            <a href="https://www.instagram.com/sharpproductionsaruba/" target="_blank" class="social-button"><i class="fab fa-instagram"></i> Instagram</a>
+        </div>
+    </div>
+</div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,255 @@
+/* General Styles */
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e91e63; /* Set the background color of the body to red */
+    color: #fff; /* Adjust text color */
+}
+
+.top-header {
+    background: #000; /* Black background for the top header */
+    color: #fff;
+    padding: 10px 0;
+    font-size: 0.9em;
+}
+
+.top-header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Merriweather', serif;
+}
+
+.call-button {
+    background: #fff;
+    color: #000; /* Adjust text color */
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.center-text {
+    text-align: center;
+    color: #fff;
+    margin: 20px 0;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: flex-end; /* Align social buttons to the right */
+}
+
+.social-button {
+    background: #fff;
+    color: #000; /* Adjust text color */
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    margin-left: 10px;
+}
+
+.red-line {
+    width: 500px;
+    height: 3px;
+    background-color: #e91e63;
+    margin: 10px auto;
+}
+
+.quote-section {
+    background-image: url('equipment.png');
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding: 100px 20px;
+    margin: 0;
+    height: 100vh;
+    position: relative; /* Ensure relative positioning for absolute children */
+}
+
+.quote-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark tint overlay */
+    z-index: 1; /* Ensure it's behind quote content */
+}
+
+.quote-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative; /* Ensure relative positioning for absolute children */
+    z-index: 2; /* Ensure it's in front of dark tint overlay */
+    color: #fff; /* Text color for quote content */
+}
+
+.quote-content h2 {
+    font-size: 5em;
+    margin-bottom: 10px;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+}
+
+.quote-description {
+    font-size: 1.2em;
+    line-height: 1.6;
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+}
+
+.bottom-header {
+    background: #000; /* Black background for the bottom header */
+    color: #fff;
+    padding: 10px 0;
+    font-size: 0.9em;
+    position: relative; /* Ensure it stays at the bottom */
+}
+
+.bottom-header .top-header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Merriweather', serif;
+}
+
+.bottom-header .call-button {
+    background: #fff;
+    color: #000;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.bottom-header .center-text {
+    text-align: center;
+    color: #fff;
+    margin: 20px 0;
+}
+
+.bottom-header .social-buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bottom-header .social-button {
+    background: #fff;
+    color: #000;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    margin-left: 10px;
+}
+
+.center-text-btn {
+    background-color: black;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: 'Merriweather', serif;
+}
+
+.center-text-btn:hover {
+    background-color: #e91e63;
+}
+
+/* Adjust center text alignment */
+.top-header .top-header-content,
+.bottom-header .top-header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Merriweather', serif;
+    flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+}
+
+/* Adjust spacing for the button */
+.top-header .center-text,
+.bottom-header .center-text {
+    text-align: center;
+    color: #fff;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.company-logo {
+    position: absolute;
+    top: 50px; /* Adjust as needed */
+    left: 30px; /* Adjust as needed */
+    z-index: 10; /* Ensure it appears in front of background */
+}
+
+.red-button {
+    background-color: #e91e63;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.red-button:hover {
+    background-color: #fff;
+    color: #e91e63;
+}
+
+/* Equipment List Styles */
+.equipment-list {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    background-color: #e91e63; /* Background color of the list page */
+    border-radius: 10px;
+}
+
+.equipment-list .item {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.equipment-list .item:last-child {
+    border-bottom: none;
+}
+
+.equipment-list h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.equipment-list p {
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+    margin: 5px 0;
+    color: #000; /* Adjust text color to black */
+}

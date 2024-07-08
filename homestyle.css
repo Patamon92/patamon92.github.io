@@ -1,0 +1,687 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.top-header {
+    background: #000; /* Black background for the top header */
+    color: #fff;
+    padding: 10px 0;
+    font-size: 0.9em;
+}
+
+.top-header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Merriweather', serif;
+}
+
+.call-button {
+    background: #fff;
+    color: #000; /* Adjust text color */
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.center-text {
+    text-align: center;
+    color: #fff;
+    margin: 20px 0;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: flex-end; /* Align social buttons to the right */
+}
+
+.social-button {
+    background: #fff;
+    color: #000; /* Adjust text color */
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    margin-left: 10px;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#video-background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    width: 80%;
+}
+
+.logo {
+    position: absolute;
+    top: -130px;
+    left: -80px;
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+}
+
+.centered-text {
+    margin-top: 30vh; /* Adjust vertical position */
+}
+
+.centered-text p {
+    margin-bottom: 20px;
+    font-weight: bold; /* Make text bold */
+}
+
+.centered-text p.playfair {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5em; /* Adjust font size as needed */
+}
+
+.centered-text p.blend-text {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5em; /* Adjust font size as needed */
+}
+
+.red-line1 {
+    width: 550px;
+    height: 3px;
+    background-color: #e91e63;
+    margin: 0 auto 20px auto;
+}
+
+.menu {
+    position: absolute;
+    top: -130px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Lato', sans-serif;
+    font-weight: bold; /* Make menu text bold */
+    line-height: 2.5; /* Increase line-height for more vertical spacing */
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 30px; /* Horizontal margin */
+    font-size: 1em;
+}
+
+.quote-button {
+    position: absolute;
+    top: -140px;
+    right: -80px;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #e91e63;
+    color: #fff; /* White text color */
+    text-decoration: none;
+    font-weight: bold; /* Make text bold */
+    margin-top: 30px;
+    transition: all 0.3s ease;
+}
+
+.quote-button:hover {
+    background-color: #e91e63;
+    color: #fff; /* Keep text white on hover */
+}
+
+/* Logos Carousel */
+.logos-carousel {
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff; /* White background */
+    border-top: 5px solid #e91e63; /* Red border on top */
+    border-bottom: 5px solid #e91e63; /* Red border on bottom */
+    padding: 20px 0;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.carousel-track {
+    display: flex;
+    animation: scroll 60s linear infinite;
+}
+
+.logo-item {
+    flex: 0 0 auto;
+    margin: 0 15px; /* Adjust margin for spacing between logos */
+}
+
+.logo-item img {
+    max-height: 100px; /* Adjust as needed */
+    max-width: 150px; /* Adjust as needed */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-25%);
+    }
+    50% {
+        transform: translateX(-50%);
+    }
+    75% {
+        transform: translateX(-75%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Welcome Section */
+.welcome-section {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 20px;
+}
+
+.welcome-section p {
+    margin: 10px 0;
+    display: block; /* Ensure each paragraph is a block element */
+}
+
+.welcome-dots,
+.welcome-title,
+.welcome-line {
+    font-weight: bold; /* Bold text */
+}
+
+.welcome-dots {
+    font-size: 1.5em; /* Adjust font size for the dots and "WELCOME TO" */
+    margin-top: 20px; /* Specific margin for welcome dots */
+    margin-bottom: 10px; /* Specific margin for welcome dots */
+}
+
+.welcome-title {
+    font-size: 3em; /* Adjust font size for "SHARP PRODUCTIONS & ENTERTAINMENT" */
+    font-family: 'Merriweather', serif; /* Apply Merriweather font */
+    margin-top: 20px; /* Specific margin for welcome title */
+    margin-bottom: 10px; /* Specific margin for welcome title */
+}
+
+.welcome-line {
+    font-size: 1em; /* Adjust font size for the dots below the title */
+    margin-top: 20px; /* Specific margin for welcome line */
+    margin-bottom: 10px; /* Specific margin for welcome line */
+}
+
+.welcome-message {
+    margin-top: 20px; /* Specific margin for welcome message */
+    margin-bottom: 20px; /* Specific margin for welcome message */
+    font-size: 1.5em; /* Adjust font size as needed */
+    font-family: 'Lato', sans-serif;
+    font-weight: normal; /* Ensure text is not bold */
+}
+
+.polaroid-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px auto; /* Adjust margin as needed */
+    max-width: 1000px; /* Adjust max-width to control the width of the section */
+    padding: 20px;
+    background-color: #fff; /* White background */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Shadow for the section */
+}
+
+.polaroid-image1 {
+    width: 45%; /* Width of the polaroid image section */
+    position: relative;
+}
+
+.track-record .polaroid-image1 img {
+    width: 100%;
+    display: block;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Polaroid shadow effect */
+    transform: rotate(-3deg); /* Tilt image to the left */
+}
+
+.track-record {
+    width: 50%; /* Width of the track record section */
+    text-align: center;
+}
+
+.track-record h2 {
+    font-family: 'Merriweather', serif; /* Use Merriweather font for TRACK RECORD */
+    font-size: 2.5em; /* Adjust font size as needed */
+    color: #000; /* Black text color */
+}
+
+.red-line2 {
+    width: 200px; /* Adjust red line width */
+    height: 3px;
+    background-color: #e91e63; /* Red color */
+    margin: 0 auto 20px auto; /* Margin for red line */
+}
+
+.track-record-info {
+    font-family: 'Lato', sans-serif; /* Use Lato font for track record info */
+    font-size: 1.2em; /* Adjust font size as needed */
+    color: #000; /* Black text color */
+    line-height: 1.6; /* Adjust line height for readability */
+}
+
+/* Adjustments for New Polaroid and Top Talent Section */
+.polaroid-talent-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px auto; /* Adjust margin as needed */
+    max-width: 1000px; /* Adjust max-width to control the width of the section */
+    padding: 20px;
+    background-color: #fff; /* White background */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Shadow for the section */
+}
+
+.top-talent {
+    width: 45%; /* Adjust width of the top talent section */
+    text-align: left; /* Align text to the left */
+}
+
+.top-talent h2 {
+    font-family: 'Merriweather', serif; /* Use Merriweather font for TOP TALENT */
+    font-size: 2.5em; /* Adjust font size as needed */
+    color: #000; /* Black text color */
+    text-align: center; /* Center align the text */
+    margin-top: 20px; /* Adjust margin top as needed */
+    margin-bottom: 10px; /* Adjust margin bottom as needed */
+}
+
+.top-talent .red-line {
+    width: 200px; /* Adjust red line width */
+    height: 3px;
+    background-color: #e91e63; /* Red color */
+    margin: 0 auto 20px auto; /* Margin for red line */
+}
+
+.top-talent p {
+    font-family: 'Lato', sans-serif; /* Use Lato font for top talent info */
+    font-size: 1.2em; /* Adjust font size as needed */
+    color: #000; /* Black text color */
+    line-height: 1.6; /* Adjust line height for readability */
+}
+
+.polaroid-image2 {
+    width: 45%; /* Adjust width of the polaroid image section */
+    position: relative;
+}
+
+.polaroid-image2 img {
+    width: 100%;
+    display: block;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Polaroid shadow effect */
+    transform: rotate(3deg); /* Tilt image to the right */
+}
+
+.track-record {
+    width: 50%; /* Width of the track record section */
+    text-align: center;
+}
+
+.track-record h2 {
+    font-family: 'Merriweather', serif; /* Use Merriweather font for TRACK RECORD */
+    font-size: 2.5em; /* Adjust font size as needed */
+    color: #000; /* Black text color */
+}
+
+.red-line3 {
+    width: 200px; /* Adjust red line width */
+    height: 3px;
+    background-color: #e91e63; /* Red color */
+    margin: 0 auto 20px auto; /* Margin for red line */
+}
+
+.track-record-info {
+    font-family: 'Lato', sans-serif; /* Use Lato font for track record info */
+    font-size: 1.2em; /* Adjust font size as needed */
+    color: #000; /* Black text color */
+    line-height: 1.6; /* Adjust line height for readability */
+}
+
+/* Services Section */
+.services-section {
+    background-color: #fff;
+    text-align: center;
+    padding: 0px 0;
+}
+
+.services-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.services-header {
+    margin-bottom: 40px;
+}
+
+.services-header h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 2.5em;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.red-line {
+    width: 100px;
+    height: 3px;
+    background-color: #e91e63;
+    margin: 0 auto 20px auto;
+}
+
+.services-description {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2em;
+    color: #000;
+    margin-bottom: 40px;
+}
+
+.services-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-item {
+    width: 30%;
+    text-align: left;
+}
+
+.service-item h3 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.5em;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.dots-line {
+    width: 50px;
+    height: 2px;
+    background-color: #e91e63;
+    margin-bottom: 20px;
+}
+
+.service-description {
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    color: #000;
+}
+
+/* Red Line Separator */
+.red-line-bottom {
+    width: 100%;
+    height: 5px;
+    background-color: #e91e63;
+    margin: 50px 0;
+}
+
+/* Our Story Section */
+.our-story-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 50px;
+}
+
+.polaroid-image3 {
+    width: 40%; /* Adjust width of the polaroid image section */
+    position: relative;
+    display: flex;
+    justify-content: center; /* Center align items horizontally */
+    flex-direction: column; /* Stack items vertically */
+    margin: 0 auto; /* Center the polaroid horizontally */
+    text-align: center; /* Center align text within the polaroid */
+}
+
+.polaroid-image3 img {
+    width: 100%;
+    display: block;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Polaroid shadow effect */
+    transform: rotate(0deg); /* Tilt image to the right */
+}
+
+.caption-title {
+    font-weight: bold;
+    font-size: 1.5em; /* Adjust font size for title */
+    margin-bottom: 5px;
+}
+
+.caption-name {
+    font-weight: bold;
+    font-size: 2em; /* Adjust font size for name */
+}
+
+
+.our-story {
+    width: 45%;
+    text-align: left;
+}
+
+.our-story h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 2.5em;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.our-story .dots-line {
+    width: 250px;
+    height: 2px;
+    background-color: #e91e63;
+    margin-bottom: 20px;
+}
+
+.our-story-description {
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    color: #000;
+}
+
+.button-container {
+    text-align: center; /* Center align the button */
+    margin-top: 20px; /* Adjust margin top as needed */
+}
+
+.red-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e91e63; /* Red background color */
+    color: #fff; /* White text color */
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Lato', sans-serif; /* Lato font */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.red-button:hover {
+    background-color: #c2185b; /* Darker red on hover */
+}
+
+/* Request a Quote Section */
+.quote-section {
+    background-image: url('quote.png'); /* Replace with your background image path */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 50px 20px;
+}
+
+.quote-content {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark tint background */
+    border: 1px solid #fff; /* White border */
+    padding: 20px;
+    text-align: center;
+}
+
+.quote-content h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 3em;
+    color: #fff; /* White text color */
+    margin-bottom: 20px;
+}
+
+.red-line5 {
+    width: 300px;
+    height: 3px;
+    background-color: #e91e63; /* Red line */
+    margin: 0 auto 20px auto;
+}
+
+.quote-text {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2em;
+    color: #fff; /* White text color */
+    margin-bottom: 20px;
+}
+
+.red-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e91e63; /* Red button */
+    color: #fff; /* White text color */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.red-button:hover {
+    background-color: #c2185b; /* Darker red on hover */
+}
+
+.bottom-header {
+    background: #000; /* Black background for the bottom header */
+    color: #fff;
+    padding: 10px 0;
+    font-size: 0.9em;
+    position: relative; /* Ensure it stays at the bottom */
+}
+
+.bottom-header .top-header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Merriweather', serif;
+}
+
+.bottom-header .call-button {
+    background: #fff;
+    color: #000;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.bottom-header .center-text {
+    text-align: center;
+    color: #fff;
+    margin: 20px 0;
+}
+
+.bottom-header .social-buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bottom-header .social-button {
+    background: #fff;
+    color: #000;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    margin-left: 10px;
+}
+
+.center-text-btn {
+    background-color: black;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+font-family: 'Merriweather', serif; 
+}
+
+.center-text-btn:hover {
+    background-color: #e91e63;
+}
+
+/* Adjust center text alignment */
+.top-header .top-header-content,
+.bottom-header .top-header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Merriweather', serif;
+    flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+}
+
+/* Adjust spacing for the button */
+.top-header .center-text,
+.bottom-header .center-text {
+    text-align: center;
+    color: #fff;
+    margin: 20px 0;
+    width: 100%;
+}
+
